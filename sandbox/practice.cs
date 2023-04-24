@@ -11,25 +11,24 @@ class Program
         {
             if (x >= 90)
             {
-                letter="A";
+                Console.WriteLine("Your grade is a A.");
             }
             else if (x < 90 && x >=80)
             {
-                letter="B";;
+                Console.WriteLine("Your grade is a B.");
             }
             else if (x >= 70 && x < 80 )
             {
-                letter="C";
+                Console.WriteLine("your grade is a C.");
             }
             else if (x >= 60 && x < 70 )
             {
-                letter="D";
+                Console.WriteLine("Your grade is a D.");
             }
             else
             {
-                letter="F";
+                Console.WriteLine("Your grade is a F.");
             }
-            Console.WriteLine($"Your grade is: {letter}");
         if (x > 70)
         {
             Console.WriteLine("Congratulations you passed!");
