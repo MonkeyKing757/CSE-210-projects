@@ -1,5 +1,5 @@
 using System;
-namespace Prep3
+namespace Practice
 {
     class Program
     {
