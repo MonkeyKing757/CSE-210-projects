@@ -1,42 +1,31 @@
 using System;
-
-class Program
+namespace Prep3
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.Write("Enter Your Grade percentage: ");
-        string grade=Console.ReadLine();
-        int x = int.Parse(grade);
-        string letter="";
+
+        static void Main(string[] args)
         {
-            if (x >= 90)
+            
+            Random randomGenerator = new Random(); // gets a system that makes it so we can generate a random number
+            int magicNumber = randomGenerator.Next(1,11); // this is where the random number comes from
+
+            int guess = -1; // why is the int guess "-1" ???
+
+            while (guess != magicNumber)
             {
-                Console.WriteLine("Your grade is a A.");
+                Console.Write("what is your guess? "); // writing the question
+                guess=int.Parse(Console.ReadLine()); // saving the answer and seeing if it is equal to the magic number
+                if (guess > magicNumber);
+                {
+                    Console.Write("Lower");
+                }
+
+                
             }
-            else if (x < 90 && x >=80)
-            {
-                Console.WriteLine("Your grade is a B.");
-            }
-            else if (x >= 70 && x < 80 )
-            {
-                Console.WriteLine("your grade is a C.");
-            }
-            else if (x >= 60 && x < 70 )
-            {
-                Console.WriteLine("Your grade is a D.");
-            }
-            else
-            {
-                Console.WriteLine("Your grade is a F.");
-            }
-        if (x > 70)
-        {
-            Console.WriteLine("Congratulations you passed!");
-        }
-        else
-        {
-            Console.WriteLine("sorry you failed the class. Try again next time.");
-        }
+            
+
+
         }
     }
 }

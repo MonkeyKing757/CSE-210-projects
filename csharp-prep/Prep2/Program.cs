@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter Your Grade percentage: ");
-        string grade=Console.ReadLine();
-        int x = int.Parse(grade);
-        string letter="";
+        Console.Write("Enter Your Grade percentage: "); // writing the question
+        string grade = Console.ReadLine(); // saving the answer in this String "grade"
+        int x = int.Parse(grade); // converts the string to a integer "x" to save for later
+        string letter = ""; // "letter" this saves the answer in the if statements that are most correct.
         {
             if (x >= 90)
             {
