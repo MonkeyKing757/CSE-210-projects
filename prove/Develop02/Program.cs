@@ -1,15 +1,21 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 namespace Develop02
 {
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Entry myEntry = new Entry();
-            Console.Write("What is your Name? :");
-            //string myEntry = Console.ReadLine(); 
-            myEntry.store("what is your name?","jacob todd", "8 may 2023");
+            Console.Write("What is your Name? :"); 
+            if (myEntry = 1) 
+            {
+                // writing the a new entry and displaying a random question
+
+    
+            }
 
             Journal journal = new Journal();
             journal.StoreEntry(myEntry);
@@ -22,5 +28,11 @@ namespace Develop02
             }
 
         }
+        // this code below will send the entries into a txt file.
+        public static void SaveToFile(List<Journal>Entry)
+        {
+
+        }
+
     }
 }
