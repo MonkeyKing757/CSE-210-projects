@@ -1,7 +1,7 @@
 using System;
 namespace learning02
 {
-    public class jobs
+    public class Jobs // something isn't right here
     {
         public string _jobTitle;
         public string _company;
