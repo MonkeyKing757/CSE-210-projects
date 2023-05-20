@@ -19,10 +19,27 @@ namespace Develop02
        }
        public void StoreEntry(Entry entry)
        {
-           if (!entries.Contains(entry))
+            // this below is saying if the entry is not already there add it
+           if ( !entries.Contains(entry))
            {
                entries.Add(entry);
            }
+       }
+       public void save()
+       {
+            string filename = "Journal.txt";
+            string[] lines = System.IO.File.ReadAllLines(filename);
+            foreach(string line in lines)
+            {
+                string[] parts = line.Split(",");
+                string prompt = parts[0];
+                string response =  parts[1];
+                string date = parts[2];
+                Entry entry = new Entry();
+                entry.store(prompt, response, date);
+                StoreEntry(entry);
+
+            }
        }
     }
 }
