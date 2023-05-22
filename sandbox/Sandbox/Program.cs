@@ -2,13 +2,17 @@ using System;
 
 class Program
 {
-    //static void Main(string[] args)
-    //{
-    //    Console.WriteLine("Hello World!");
-    //    Console.WriteLine("this is not python");
-    //    
-    //    Console.Write("what is your favorite color? ");
-    //    string color = Console.ReadLine();
-    //    Console.WriteLine("your color is " + color );     
-    //}
+    static void Main(string[] args)
+    {
+        Cake c1 = new Cake("chocolate");
+        Cake c2 = new Cake("vanilla");
+        Cake c3 = new Cake("strawberry");
+        
+        c1.Taste();
+        c2.Taste();
+        c3.Taste();
+        
+        
+        
+    }
 }

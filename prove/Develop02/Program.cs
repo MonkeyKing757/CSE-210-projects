@@ -23,6 +23,7 @@ namespace Develop02
                 Console.WriteLine("What would you like to do? ");
                 string rawinput = Console.ReadLine();
                 userInput = int.Parse(rawinput);
+                
                 if (userInput == 1) 
                 {
                     // writing the a new entry and displaying a random question

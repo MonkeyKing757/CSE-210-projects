@@ -2,11 +2,14 @@ using System;
 
 namespace Develop03
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Develop03 World!");
+            Scripture s = new Scripture("John 3:16");
+            Scripture b = new Scripture("Matt 1:9");
+            s.SpitOutReferenceText();
+            b.SpitOutReferenceText();
         }
     }
 }
