@@ -7,16 +7,40 @@ namespace Develop03
     {
         // using the data below will used by "SpitOutReferenceText"
         private string _referenceText = " "; 
-        // line 11 is a construtor to reuse the "box" scripture in program
+        private Verse _verse;
+        // line 12 is a construtor to reuse the "box" scripture in program
         // for example, Scripture s = new Scripture("some text");
-        public Scripture(string referenceText)
+        public Scripture()
         {
-            _referenceText = $"The reference is: {referenceText}";
+            LoadScripture();
         }
 
         public void SpitOutReferenceText()
         {
             Console.WriteLine(_referenceText);
         }
+
+        public void SetVerse(string verseText)
+        {
+            _verse = new Verse(verseText);
+        }
+
+        public void LoadScripture()
+        {
+            string filename = "Scipture.txt";
+            string[] lines = System.IO.File.ReadAllLines(filename);
+            foreach(string line in lines)
+            {
+                string[] parts = line.Split("|");
+                _referenceText = $"The reference is: {parts[0]}";
+                SetVerse(parts[1]);
+            }
+        }
+
+        public void VerseSpit()
+        {
+            _verse.VerseSpit();
+        }
+        
     }
 }
