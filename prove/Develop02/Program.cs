@@ -33,7 +33,7 @@ namespace Develop02
                     questions[2] = "How did I see the hand of the Lord in my life today?";
                     questions[3] = "What was the strongest emotion I felt today";
                     questions[4] = "If I had one thing I could do over today, what would it be?";
-                    questions[5] = "what was the most attractive person you saw today?";
+                    questions[5] = "who was the most attractive person you saw today?";
                     questions[6] = "What was the weather like today?";
                     
                     Random rnd = new Random();
